@@ -3,9 +3,11 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import Img from 'gatsby-image'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, team, content, contentComponent }) => {
   const PageContent = contentComponent || Content
+  const imageStyle = { width: '250px'}
 
   return (
     <section className="section section--gradient">
@@ -17,6 +19,9 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
                 {title}
               </h2>
               <PageContent className="content" content={content} />
+              <figure className="image is-4by4">
+                <Img style={imageStyle} fluid={team.image.image.childImageSharp.fluid} alt={team.image.alt} />
+              </figure>
             </div>
           </div>
         </div>
@@ -39,6 +44,7 @@ const AboutPage = ({ data }) => {
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        team={post.frontmatter.team}
         content={post.html}
       />
     </Layout>
@@ -57,6 +63,18 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        team {
+          image {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 250, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
