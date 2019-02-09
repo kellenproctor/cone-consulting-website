@@ -30,11 +30,11 @@ const Navbar = class extends React.Component {
  render() {
    return (
   
-  <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
+  <nav className="navbar is-transparent is-fixed-top" role="navigation" aria-label="main-navigation">
     <div className="container">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item" title="Logo">
-          <img src={logo} alt="Cone Consulting" style={{ maxHeight: '10vh'}} />
+          <img src={logo} alt="Cone Consulting" style={{ maxHeight: '9vh', height:'9vh'}} />
         </Link>
         {/* Hamburger menu */}
         <div className="navbar-burger burger" data-target="navMenu">
@@ -45,16 +45,16 @@ const Navbar = class extends React.Component {
       </div>
       <div id="navMenu" className="navbar-menu">
         <div className="navbar-start has-text-centered">
-          <Link className="navbar-item" to="/about">
+          <Link className="navbar-item is-size-5" to="/services">
+            Services
+          </Link>
+          <Link className="navbar-item is-size-5" to="/about">
             About
           </Link>
-          <Link className="navbar-item" to="/products">
-            Products
-          </Link>
-          <Link className="navbar-item" to="/contact">
+          <Link className="navbar-item is-size-5" to="/contact">
             Contact
           </Link>
-          <Link className="navbar-item" to="/contact/examples">
+          <Link className="navbar-item is-size-5" to="/contact/examples">
             Form Examples
           </Link>
         </div>
