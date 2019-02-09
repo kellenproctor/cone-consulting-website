@@ -9,6 +9,7 @@ $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #333
 
+// Navbar breakpoint set to tablet (original desktop)
 $navbar-breakpoint: $tablet
 
 .navbar .navbar-menu
@@ -47,6 +48,30 @@ $navbar-breakpoint: $tablet
   margin-top: 0 !important
 
 @import "~bulma"
+
+// Navbar burger
+.navbar-burger
+  margin-top: 22px
+  margin-right: 10px
+  span
+    width: 32px
+    height: 3px
+    left: calc(50% - 16px)
+  span:nth-child(1)
+    top: calc(50% - 10px)
+    .is-active
+      transform: translateY(8px) rotate(45deg)
+  span:nth-child(2)
+    top: calc(50% - 2px)
+  span:nth-child(3)
+    top: calc(50% + 6px)
+
+.navbar-burger.is-active
+  span:nth-child(1)
+    transform: translateY(8px) rotate(45deg)
+  span:nth-child(3)
+    transform: translateY(-8px) rotate(-45deg)
+
 
 // Sticy footer CSS
 .site
