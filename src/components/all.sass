@@ -47,3 +47,12 @@ $navbar-breakpoint: $tablet
   margin-top: 0 !important
 
 @import "~bulma"
+
+// Sticy footer CSS
+.site
+  display: flex
+  min-height: calc(100vh - #{$navbar-height})
+  flex-direction: column
+
+.site-content
+  flex: 1

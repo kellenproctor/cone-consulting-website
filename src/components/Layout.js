@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
 
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 import './all.sass'
 
 const TemplateWrapper = ({ children }) => (
@@ -38,8 +39,11 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
-        <Navbar />
-        <div>{children}</div>
+        <div className="site">
+          <Navbar />
+          <div className="site-content">{children}</div>
+          <Footer />
+        </div>
       </div>
     )}
   />
