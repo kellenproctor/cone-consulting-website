@@ -30,9 +30,9 @@ const Navbar = class extends React.Component {
  render() {
    return (
   
-  <nav className="navbar is-transparent is-fixed-top" role="navigation" aria-label="main-navigation">
+  <nav className="navbar is-fixed-top" role="navigation" aria-label="main-navigation">
     <div className="container">
-      <div className="navbar-brand">
+      <div className="navbar-brand" style={{marginLeft: "2rem"}}>
         <Link to="/" className="navbar-item" title="Logo">
           <img src={logo} alt="Cone Consulting" style={{ maxHeight: '5rem', height:'5rem'}} />
         </Link>
@@ -44,7 +44,7 @@ const Navbar = class extends React.Component {
         </div>
       </div>
       <div id="navMenu" className="navbar-menu">
-        <div className="navbar-start has-text-centered">
+        <div className="navbar-end has-text-centered">
           <Link className="navbar-item is-size-5" to="/services">
             Services
           </Link>
@@ -54,7 +54,7 @@ const Navbar = class extends React.Component {
           <Link className="navbar-item is-size-5" to="/contact">
             Contact
           </Link>
-          <Link className="navbar-item is-size-5" to="/contact/examples">
+          <Link className="navbar-item is-size-5" to="/contact/examples" style={{marginRight: '2rem'}}>
             Form Examples
           </Link>
         </div>
