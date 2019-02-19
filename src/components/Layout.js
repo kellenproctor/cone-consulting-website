@@ -21,7 +21,7 @@ const TemplateWrapper = ({ children }) => (
     render={data => (
       <div>
         <Helmet>
-          <html lang="en" className="has-navbar-fixed-top" />
+          <html lang="en"/>
           <title>{data.site.siteMetadata.title}</title>
           <meta name="description" content={data.site.siteMetadata.description} />
           

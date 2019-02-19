@@ -10,7 +10,7 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
-        <section className="hero is-success is-fullheight-with-navbar">
+        <section className="hero is-success is-fullheight">
           <div className="hero-body">
             <div className="container has-text-centered">
               <h1 className="title">

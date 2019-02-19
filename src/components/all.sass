@@ -13,7 +13,14 @@ $body-color: #333
 $navbar-breakpoint: $tablet
 
 // Navbar background color
-// $navbar-background-color: transparent
+$navbar-background-color: transparent
+
+// Fonts
+@font-face
+  font-family: 'Mosk'
+  src: url('../../static/font/mosk.ttf') format('truetype')
+
+$family-sans-serif: 'Mosk', $family-sans-serif
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -76,7 +83,7 @@ $navbar-breakpoint: $tablet
     transform: translateY(-8px) rotate(-45deg)
 
 
-// Sticy footer CSS
+// Sticky footer CSS
 .site
   display: flex
   min-height: calc(100vh - #{$navbar-height})

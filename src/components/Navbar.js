@@ -30,14 +30,14 @@ const Navbar = class extends React.Component {
  render() {
    return (
   
-  <nav className="navbar is-fixed-top" role="navigation" aria-label="main-navigation">
+  <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation" style={{position: "absolute", top: "0", width: "100vw"}}>
     <div className="container">
       <div className="navbar-brand" style={{marginLeft: "2rem"}}>
         <Link to="/" className="navbar-item" title="Logo">
-          <img src={logo} alt="Cone Consulting" style={{ maxHeight: '5rem', height:'5rem'}} />
+          <img src={logo} alt="Cone Consulting" style={{ maxHeight: "5rem", height:"5rem"}} />
         </Link>
         {/* Hamburger menu */}
-        <div className="navbar-burger burger" data-target="navMenu">
+        <div className="navbar-burger burger" data-target="navMenu" style={{marginRight: "2rem"}}>
           <span></span>
           <span></span>
           <span></span>
@@ -45,16 +45,16 @@ const Navbar = class extends React.Component {
       </div>
       <div id="navMenu" className="navbar-menu">
         <div className="navbar-end has-text-centered">
-          <Link className="navbar-item is-size-5" to="/services">
-            Services
+          <Link className="navbar-item is-size-4" to="/services">
+            SERVICES
           </Link>
-          <Link className="navbar-item is-size-5" to="/about">
-            About
+          <Link className="navbar-item is-size-4" to="/about">
+            ABOUT
           </Link>
-          <Link className="navbar-item is-size-5" to="/contact">
-            Contact
+          <Link className="navbar-item is-size-4" to="/contact">
+            CONTACT
           </Link>
-          <Link className="navbar-item is-size-5" to="/contact/examples" style={{marginRight: '2rem'}}>
+          <Link className="navbar-item is-size-4" to="/contact/examples">
             Form Examples
           </Link>
         </div>
