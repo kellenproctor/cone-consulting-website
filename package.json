@@ -1,7 +1,7 @@
 {
   "name": "cone-consulting",
   "description": "Website for Cone Consulting Limited",
-  "version": "1.0",
+  "version": "1.0.1",
   "author": "Kellen Proctor",
   "dependencies": {
     "bulma": "^0.7.4",
