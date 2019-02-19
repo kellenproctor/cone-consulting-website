@@ -10,12 +10,22 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
-        <section className="hero is-success is-fullheight">
+        <section
+          className="hero is-success is-fullheight"
+          id="index-page"
+          style={{backgroundImage: `linear-gradient(rgba(45, 54, 67, 0.5), rgba(45, 54, 67, 0.5)), url('img/devils_peak.jpeg')`, backgroundRepeat: 'no-repeat', backgroundPosition:"center", backgroundSize:"cover"}}>
           <div className="hero-body">
-            <div className="container has-text-centered">
-              <h1 className="title">
-                Cone Consulting Limited
-              </h1>
+            <div className="container">
+              <div className="columns">
+                <div className="column is-offset-2">
+                  <h1 className="title is-size-2">
+                    Cone Consulting Limited
+                  </h1>
+                  <h2 className="subtitle is-size-3 is-clearfix">
+                    Expert Geotechnical Consultation &amp; Data Analysis
+                  </h2>
+                </div>
+              </div>
             </div>
           </div>
         </section>

@@ -45,16 +45,16 @@ const Navbar = class extends React.Component {
       </div>
       <div id="navMenu" className="navbar-menu">
         <div className="navbar-end has-text-centered">
-          <Link className="navbar-item is-size-4" to="/services">
+          <Link className="navbar-item is-size-4 has-text-white" to="/services">
             SERVICES
           </Link>
-          <Link className="navbar-item is-size-4" to="/about">
+          <Link className="navbar-item is-size-4 has-text-white" to="/about">
             ABOUT
           </Link>
-          <Link className="navbar-item is-size-4" to="/contact">
+          <Link className="navbar-item is-size-4 has-text-white" to="/contact">
             CONTACT
           </Link>
-          <Link className="navbar-item is-size-4" to="/contact/examples">
+          <Link className="navbar-item is-size-4 has-text-white" to="/contact/examples">
             Form Examples
           </Link>
         </div>
