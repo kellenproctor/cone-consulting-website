@@ -13,7 +13,7 @@ export default class IndexPage extends React.Component {
         <section
           className="hero is-success is-fullheight"
           id="index-page"
-          style={{backgroundImage: `linear-gradient(rgba(45, 54, 67, 0.5), rgba(45, 54, 67, 0.5)), url('img/devils_peak.jpeg')`, backgroundRepeat: 'no-repeat', backgroundPosition:"center", backgroundSize:"cover"}}>
+          style={{backgroundImage: `linear-gradient(rgba(45, 54, 67, 0.5), rgba(45, 54, 67, 0.5)), url('img/devils_peak.jpg')`, backgroundRepeat: 'no-repeat', backgroundPosition:"center", backgroundSize:"cover"}}>
           <div className="hero-body">
             <div className="container">
               <div className="columns">
