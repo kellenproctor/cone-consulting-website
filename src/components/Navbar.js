@@ -2,6 +2,13 @@ import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../../public/img/Right.png'
 
+const navStyle = {
+  position: "absolute",
+  top: "0",
+  width: "100vw",
+  background: `linear-gradient(rgba(45, 54, 67, 0.8), rgba(45, 54, 67, 0.5))`
+}
+
 const Navbar = class extends React.Component {
 
   componentDidMount() {
@@ -29,8 +36,11 @@ const Navbar = class extends React.Component {
  
  render() {
    return (
-  
-  <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation" style={{position: "absolute", top: "0", width: "100vw"}}>
+  <nav
+    className="navbar is-transparent"
+    role="navigation"
+    aria-label="main-navigation"
+    style={navStyle} >
     <div className="container">
       <div className="navbar-brand" style={{marginLeft: "2rem"}}>
         <Link to="/" className="navbar-item" title="Logo">
