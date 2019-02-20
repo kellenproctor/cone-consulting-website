@@ -18,7 +18,8 @@ export const ServicesPageTemplate = ({
   fullImage,
   pricing,
 }) => (
-  <section className="section section--gradient">
+  <section className="section section--gradient"
+    style={{marginTop: "4rem"}}>
     <div className="container">
       <div className="section">
         <div className="columns">

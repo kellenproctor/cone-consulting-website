@@ -10,7 +10,8 @@ export const AboutPageTemplate = ({ title, team, content, contentComponent }) =>
   const imageStyle = { width: '250px'}
 
   return (
-    <section className="section section--gradient">
+    <section className="section section--gradient"
+      style={{marginTop: "3rem"}}>
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">

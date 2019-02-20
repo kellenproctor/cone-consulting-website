@@ -36,9 +36,12 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <section className="section">
+        <section className="section"
+          style={{marginTop: "5rem"}}>
           <div className="container">
-            <div className="content">
+            <div className="columns">
+              <div className="column is-10 is-offset-1">
+                <div className="content">
         <h1>Contact</h1>
         <form
           name="contact"
@@ -78,6 +81,8 @@ export default class Index extends React.Component {
             <button className="button is-link" type="submit">Send</button>
           </div>
         </form>
+        </div>
+        </div>
         </div>
         </div>
         </section>
