@@ -2,10 +2,6 @@
 templateKey: 'about-page'
 path: /about
 title: About Us
-team:
-  image:
-    alt: Young William in a tophat
-    image: /img/tophatWill.jpg
 ---
 ### Specialist Network
 Cone Consulting Limited (CCL) is a network of geotechnical experts with extensive experience in Cone Penetration Testing (CPT). We are ready to help you raise your CPT operations to the highest levels of efficiency and quality. We will dramatically boost your knowledge and understanding using CPT in your operations. Whether you are a contractor, designer, engineer, or government organisation, we can support and enhance your business in the world of CPT.
