@@ -1,6 +1,8 @@
 import React from "react";
+import { graphql } from 'gatsby'
 import { navigate } from "gatsby-link";
 import Layout from '../../components/Layout'
+import PreviewCompatibleImage from '../../components/PreviewCompatibleImage'
 
 function encode(data) {
   return Object.keys(data)
@@ -42,7 +44,7 @@ export default class Index extends React.Component {
             <div className="columns">
               <div className="column is-10 is-offset-1">
                 <div className="content">
-        <h1>Contact</h1>
+        <h1>Get In Touch With Us</h1>
         <form
           name="contact"
           method="post"
@@ -81,6 +83,38 @@ export default class Index extends React.Component {
             <button className="button is-link" type="submit">Send</button>
           </div>
         </form>
+        <h1 className="has-text-centered">Contact Information</h1>
+        <hr style={{marginBottom: "3rem"}} />
+        <div className="columns">
+          <div className="column is-5 is-offset-1">
+            <h2>Hong Kong</h2>
+            <p>
+              Penthouse, Central Building <br/>
+              1 Queen's Road Central <br/>
+              Central, Hong Kong
+            </p>
+            <p>+852 8888 8888</p>
+          </div>
+          <div className="column is-6">
+            <PreviewCompatibleImage imageInfo={this.props.data.hk} />
+          </div>
+        </div>
+        <hr style={{marginBottom: "3rem"}} />
+        <div className="columns">
+          <div className="column is-5 is-offset-1">
+            <h2>Kuala Lumpur</h2>
+            <p>
+              Concourse Level, Lower Ground <br/>
+              Kuala Lumpur City Centre <br/>
+              50088 Kuala Lumpur <br/>
+              Malaysia
+            </p>
+            <p>+60 1-8888 8888</p>
+          </div>
+          <div className="column is-6" style={{marginBottom: "5rem"}}>
+            <PreviewCompatibleImage imageInfo={this.props.data.kl} />
+          </div>
+        </div>
         </div>
         </div>
         </div>
@@ -90,3 +124,22 @@ export default class Index extends React.Component {
     );
   }
 }
+
+export const ContactQuery = graphql`
+query ContactQuery {
+  hk: file(relativePath: {eq: "hongkong.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 550) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+  kl: file(relativePath: {eq: "kl.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 550) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+}
+`
