@@ -2,6 +2,33 @@ import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../../static/img/Right.png'
 
+const navItems = [
+  {
+    title: "SERVICES",
+    path: "/services"
+  },
+  {
+    title: "ABOUT US",
+    path: "/about"
+  },
+  {
+    title: "ABOUT CPT",
+    path: "/about-cpt"
+  },
+  {
+    title: "CONTACT",
+    path: "/contact"
+  }
+]
+
+const navLinks = navItems.map((item) => {
+  return (
+    <Link  className="navbar-item is-size-4 has-text-white" to={item.path} key={item.title}>
+      {item.title}
+    </Link>
+  )
+})
+
 const navStyle = {
   position: "absolute",
   top: "0",
@@ -55,18 +82,7 @@ const Navbar = class extends React.Component {
       </div>
       <div id="navMenu" className="navbar-menu">
         <div className="navbar-end has-text-centered">
-          <Link className="navbar-item is-size-4 has-text-white" to="/services">
-            SERVICES
-          </Link>
-          <Link className="navbar-item is-size-4 has-text-white" to="/about">
-            ABOUT US
-          </Link>
-          <Link className="navbar-item is-size-4 has-text-white" to="/about-cpt">
-            ABOUT CPT
-          </Link>
-          <Link className="navbar-item is-size-4 has-text-white" to="/contact">
-            CONTACT
-          </Link>
+          {navLinks}
         </div>
       </div>
     </div>
