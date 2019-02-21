@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../../public/img/Right.png'
+import logo from '../../static/img/Right.png'
 
 const navStyle = {
   position: "absolute",
