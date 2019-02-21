@@ -59,13 +59,13 @@ const Navbar = class extends React.Component {
             SERVICES
           </Link>
           <Link className="navbar-item is-size-4 has-text-white" to="/about">
-            ABOUT
+            ABOUT US
+          </Link>
+          <Link className="navbar-item is-size-4 has-text-white" to="/about-cpt">
+            ABOUT CPT
           </Link>
           <Link className="navbar-item is-size-4 has-text-white" to="/contact">
             CONTACT
-          </Link>
-          <Link className="navbar-item is-size-4 has-text-white" to="/contact/examples">
-            Form Examples
           </Link>
         </div>
       </div>
