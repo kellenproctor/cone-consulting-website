@@ -4,15 +4,15 @@ path: /about
 title: About Us
 team: 
   Will:
-    name: William Bond
-    image: /img/Will.jpeg
-    alt: William Bond profile picture
-    writeup: William Bond is a Technical Manager for Geomil Equipment based in Hong Kong. A Geologist, William Graduated from the University of Leicester as a Master of Geology (MGeol) before joining Cone Penetration Testing (CPT) specialist contractor Lankelma as a Project Engineer. William moved to Hong Kong to take on the role of Engineering Geologist with Intrafor working at a project management level on CPT projects as well as in Horizontal Directional Drilling (HDD). William joined Geomil as a Technical Manager in 2017 to boost CPT support and understanding in the region.
+    name: James Bond
+    image: /img/james.jpg
+    alt: James Bond profile picture
+    writeup: James Bond is a Technical Manager for MI6 Equipment based in London. A spy, James Graduated from the University of Spycraft as a Master of Mystery (MMyst) before joining Cone Penetration Testing (CPT) specialist contractor Moneypenny as a Project Engineer. James moved to Hong Kong to take on the role of Engineering Interactions Agent with M working at a project management level on CPT projects as well as in Horizontal Directional Drilling (HDD). James joined MI6 as a Technical Manager in 2017 to boost CPT support and understanding in the region.
   Ernst:
-    name: Ernst Wassenaar
-    image: /img/Ernst.jpeg
-    alt: Ernst Wassenaar profile picture
-    writeup: Ernst Wassenaar started working in the CPT industry in 1991 for Conewel B.V. , a small manufacturer of CPT electronics that in 1996 merged with Gouda Machine Factory to become Geomil Equipment B.V. With a background in electronics, Ernst stepped up the ranks to the position of Technical Director while becoming one of the partners in the company. in 2014 he then took up the challenge of moving to Malaysia to start a regional office for the ever growing markets in this part of the world. In his current role, Ernst acts as Regional Manager for Asia-Pacific.
+    name: Ernst Blofeld
+    image: /img/blofeld.jpg
+    alt: Ernst Blofeld profile picture
+    writeup: Ernst Wassenaar started working in the CPT industry in 1991 for Secret Lair, a small manufacturer of CAT electronics that in 1996 merged with Aged Gouda  Farm to become SPECTRE A.G.F. With a background in electronics, Ernst stepped up the ranks to the position of Technical Director while becoming the only partner in the company, following the mysterious disappearance of the other partners. in 2014 he then took up the challenge of moving to Indonesia to start a regional lair for the ever growing markets in that part of the world. In his current role, Ernst acts as an Enterprise Agent of SPECTRE for the Asia-Pacific.
 bottomImage: /img/barge_group_wide.jpg
 ---
 ### What We Do
