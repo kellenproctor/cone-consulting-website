@@ -15,15 +15,11 @@ const navItems = [
     title: "ABOUT CPT",
     path: "/about-cpt"
   },
-  {
-    title: "CONTACT",
-    path: "/contact"
-  }
 ]
 
 const navLinks = navItems.map((item) => {
   return (
-    <Link  className="navbar-item is-size-4 has-text-white" to={item.path} key={item.title}>
+    <Link  className="navbar-item is-size-5 has-text-white" to={item.path} key={item.title}>
       {item.title}
     </Link>
   )
@@ -83,6 +79,11 @@ const Navbar = class extends React.Component {
       <div id="navMenu" className="navbar-menu">
         <div className="navbar-end has-text-centered">
           {navLinks}
+          <Link 
+            className="navbar-item button is-size-5 has-text-white" to="/contact" id="nav-button"
+            style={{margin: "auto", backgroundColor: "transparent", borderWidth: "2px", borderRadius: "0"}} >
+            CONTACT US
+          </Link>
         </div>
       </div>
     </div>
