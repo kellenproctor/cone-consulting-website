@@ -11,7 +11,7 @@ description: >-
   retain key staff, and increase their future business generation.
 intro:
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/onsite.jpg
       title: Onsite Consultation
       text: >
         Onsite means with you, wherever we can help you best. This can be onsite 
@@ -31,7 +31,7 @@ intro:
         practices, international standards and project specifications are 
         adhered to, production is high and that the data provided is reliable 
         and accurate.
-    - image: /img/coffee-gear.png
+    - image: /img/barges.JPG
       title: Remote Support
       text: >
         Many issues encountered during the lifetime of a CPT project can be 
@@ -43,7 +43,7 @@ intro:
         problems when they arise, we can help you eliminate the need for costly 
         retests as well as limiting potential loss of earnings due to not 
         satisfying project requirements.
-    - image: /img/tutorials.png
+    - image: /img/report.jpg
       title: Data Analysis, Validation, and Reporting
       text: >
         CPT data contributes to, and in some cases forms the basis of, many 
@@ -65,7 +65,7 @@ intro:
         approval, then seek it. We will analyse and validate the quality of the 
         data you are purchasing to assess whether it is up to standard, and if 
         not then, why not.
-    - image: /img/meeting-space.png
+    - image: /img/class.jpg
       title: Coaching and Courses
       text: >
         Give a man a fish and he will eat for a day, you know how the saying 

@@ -191,7 +191,7 @@ export const servicesPageQuery = graphql`
           blurbs {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid(maxWidth: 240, maxHeight: 240, quality: 64) {
                   ...GatsbyImageSharpFluid
                 }
               }
