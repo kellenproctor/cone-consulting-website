@@ -67,14 +67,14 @@ export const ServicesPageTemplate = ({
               <div className="tile is-ancestor">
                 <div className="tile is-vertical">
                   <div className="tile">
-                    <div className="tile is-parent is-vertical">
+                    <div className="tile is-parent">
                       <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image1} />
+                        <PreviewCompatibleImage imageInfo={main.image2} />
                       </article>
                     </div>
                     <div className="tile is-parent">
                       <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image2} />
+                        <PreviewCompatibleImage imageInfo={main.image1} />
                       </article>
                     </div>
                   </div>
@@ -198,7 +198,7 @@ export const servicesPageQuery = graphql`
             alt
             image {
               childImageSharp {
-                fluid(maxWidth: 526, quality: 92) {
+                fluid(maxWidth: 526, maxHeight: 700, quality: 92) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -208,7 +208,7 @@ export const servicesPageQuery = graphql`
             alt
             image {
               childImageSharp {
-                fluid(maxWidth: 526, quality: 92) {
+                fluid(maxWidth: 526, maxHeight: 700, quality: 92) {
                   ...GatsbyImageSharpFluid
                 }
               }

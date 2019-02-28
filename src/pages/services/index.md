@@ -52,14 +52,14 @@ main:
     journey. We personally visit each farm to make sure the conditions are
     optimal for the plants, farmers and the local environment.
   image1:
-    alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
+    alt: Coring sample in a box being inspected
+    image: /img/core_sample.JPG
   image2:
-    alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
+    alt: CPT machine on a barge
+    image: /img/barge_lighter.jpg
   image3:
-    alt: Coffee beans
-    image: /img/products-grid1.jpg
+    alt: People inspecting a cpt or coring machine
+    image: /img/tunnel_people.JPG
 testimonials:
   - author: Elisabeth Kaurismäki
     quote: >-
