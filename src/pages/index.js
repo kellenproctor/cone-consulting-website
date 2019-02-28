@@ -17,8 +17,9 @@ export default class IndexPage extends React.Component {
           <div className="hero-body">
             <div className="container">
               <div className="columns">
-                <div className="column is-offset-2">
-                  <h1 className="title is-size-2">
+                <div className="column is-offset-2 has-text-centered" 
+                      style={{borderRadius: "5px", background: "radial-gradient(rgba(45, 54, 67, 0.9), rgba(45, 54, 67, 0))"}} >
+                  <h1 className="title is-size-1">
                     Cone Consulting Limited
                   </h1>
                   <h2 className="subtitle is-size-3 is-clearfix">
@@ -32,7 +33,10 @@ export default class IndexPage extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
+              <h1 className="has-text-weight-bold is-size-3"> Find Out More About Our Services</h1>
+            </div>
+            <div className="content">
+              <h1 className="has-text-weight-bold is-size-3">News</h1>
             </div>
             {posts
               .map(({ node: post }) => (
