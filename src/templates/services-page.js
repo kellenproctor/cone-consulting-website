@@ -38,8 +38,8 @@ export const ServicesPageTemplate = ({
                 <h2
                   className="has-text-weight-bold is-size-1"
                   style={{
-                    boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-                    backgroundColor: '#f40',
+                    boxShadow: '0.5rem 0 0 #008000, -0.5rem 0 0 #008000',
+                    backgroundColor: '#008000',
                     color: 'white',
                     padding: '1rem',
                   }}
@@ -48,7 +48,7 @@ export const ServicesPageTemplate = ({
                 </h2>
               </div>
               <div className="columns">
-                <div className="column is-7">
+                <div className="column is-9">
                   <h3 className="has-text-weight-semibold is-size-2">
                     {heading}
                   </h3>
@@ -56,14 +56,14 @@ export const ServicesPageTemplate = ({
                 </div>
               </div>
               <Features gridItems={intro.blurbs} />
-              <div className="columns">
+              {/* <div className="columns">
                 <div className="column is-7">
                   <h3 className="has-text-weight-semibold is-size-3">
                     {main.heading}
                   </h3>
                   <p>{main.description}</p>
                 </div>
-              </div>
+              </div> */}
               <div className="tile is-ancestor">
                 <div className="tile is-vertical">
                   <div className="tile">
@@ -86,7 +86,17 @@ export const ServicesPageTemplate = ({
                 </div>
               </div>
               <Testimonials testimonials={testimonials} />
-              <div
+              <div className="content has-text-centered"
+                    style={{margin: "5rem auto 0", maxWidth: "70vw"}} >
+                <h3 className="is-5">
+                Contact us at 
+                <a href="mailto:info@coneconsulting.com"> info@coneconsulting.com </a> 
+                or call +852 9125 6235 to see how we can help you raise your CPT 
+                operations to the highest standards, reduce costs and increase 
+                market share and reputation.
+                </h3>
+              </div>
+              {/* <div
                 className="full-width-image-container"
                 style={{
                   backgroundImage: `url(${
@@ -100,7 +110,7 @@ export const ServicesPageTemplate = ({
                 {pricing.heading}
               </h2>
               <p className="is-size-5">{pricing.description}</p>
-              <Pricing data={pricing.plans} />
+              <Pricing data={pricing.plans} /> */}
             </div>
           </div>
         </div>
@@ -187,6 +197,7 @@ export const servicesPageQuery = graphql`
               }
             }
             text
+            title
           }
           heading
           description

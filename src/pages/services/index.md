@@ -1,43 +1,90 @@
 ---
 templateKey: 'services-page'
 path: /services
-title: Our Coffee
+title: Our Services
 image: /img/jumbotron.jpg
 heading: What we offer
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  Even experienced companies with a long history in the CPT market struggle with 
+  inefficiencies in their working process. Many do not realise that by taking 
+  steps to mitigate these issues, they can lower costs, increase productivity, 
+  retain key staff, and increase their future business generation.
 intro:
   blurbs:
     - image: /img/coffee.png
+      title: Onsite Consultation
       text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
+        Onsite means with you, wherever we can help you best. This can be onsite 
+        with your production team, in the boardroom with your decision makers, 
+        or in front of your customers.  CCL will offer guidance and expertise 
+        from the preparatory works to application of invoice, including; 
+        tendering for a CPT project, selecting and purchasing the best equipment 
+        for the job, writing method statements, onsite production, data 
+        interpretation and reporting. CCL will help critically assess your 
+        operation, identifying, and importantly, helping you to eliminate 
+        pitfalls, bad practices and inefficiencies from your working process 
+        raising productivity, reducing costs, avoiding unmanageable 
+        specifications and producing data of the highest quality.  
+
+        Not the contractor? If you are subcontracting a CPT specialist to 
+        undertake the works on your behalf, then you need to know best 
+        practices, international standards and project specifications are 
+        adhered to, production is high and that the data provided is reliable 
+        and accurate.
     - image: /img/coffee-gear.png
+      title: Remote Support
       text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
+        Many issues encountered during the lifetime of a CPT project can be 
+        solved remotely by getting the information you need when you need it.  
+
+        CCL are available to our remote clients by phone, email and video 
+        conference call whenever you need us. We understand that when a problem 
+        needs to be solved, it needs to be solved immediately. By addressing 
+        problems when they arise, we can help you eliminate the need for costly 
+        retests as well as limiting potential loss of earnings due to not 
+        satisfying project requirements.
     - image: /img/tutorials.png
+      title: Data Analysis, Validation, and Reporting
       text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
+        CPT data contributes to, and in some cases forms the basis of, many 
+        aspects of civil engineering including; foundation design, bearing 
+        capacity analysis and ground improvement strategy. The consequences of 
+        inaccurate, misleading or poorly reported geotechnical data are 
+        catastrophic.  
+
+        CCL’s detailed reports not only present the raw and processed CPT data, 
+        but also give comments on the data quality and reliability giving your 
+        customer confidence in your results. Our reports are not copy and paste 
+        tasks, but instead each CPT is carefully studied and eccentricities in 
+        the data along with patterns within the dataset are highlighted and 
+        explained. Allow us to answer the questions top-level engineers will 
+        raise before they are even asked.  
+
+        If you are basing your geotechnical design on CPT data then you want to 
+        know it is data you can rely on. If you do not see the CCL seal of 
+        approval, then seek it. We will analyse and validate the quality of the 
+        data you are purchasing to assess whether it is up to standard, and if 
+        not then, why not.
     - image: /img/meeting-space.png
+      title: Coaching and Courses
       text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
+        Give a man a fish and he will eat for a day, you know how the saying 
+        goes. Our mission at CCL is to boost knowledge and understanding of all 
+        aspects of the CPT. We aim to equip our partners with the tools to 
+        handle issues at all levels of the CPT process with confidence and 
+        clarity. The bulk of this learning occurs naturally through our onsite 
+        and offsite consultation, however, some topics are much more efficiently 
+        delivered in a classroom coaching environment.  
+
+        We offer a range of courses aimed at specific parts of the CPT 
+        operation, for example, project coordination, dissipation testing and 
+        data processing. Our courses are not conducted just by reeling off 
+        slides from a PowerPoint and hoping our partner will see improved 
+        results. Our courses will be tailored to your specific project and 
+        learning objectives. We will teach the theory and coach the changes 
+        until they are a natural part of your working processes. Knowledge and 
+        inherent understanding of CPT are the tools that will allow you to 
+        maximise your business and prevent unnecessary loss of earnings.
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
@@ -61,14 +108,17 @@ main:
     alt: People inspecting a cpt or coring machine
     image: /img/tunnel_people.JPG
 testimonials:
-  - author: Elisabeth Kaurismäki
+  - author: Eve Moneypenny
     quote: >-
-      The first time I tried Kaldi’s coffee, I couldn’t even believe that was
-      the same thing I’ve been drinking every morning.
-  - author: Philipp Trommler
+      I know my way around a construction site, but with the help of Cone 
+      Consulting, that devilish teamup of former nemeses, our firm tripled 
+      our productivity, decreased our longing glances, and turned ordinary 
+      data into extraordinary intelligence.
+  - author: Douglas Powers
     quote: >-
-      Kaldi is the place to go if you want the best quality coffee. I love their
-      stance on empowering farmers and transparency.
+      Cone Consulting helped us to site our evil lair by providing incredible 
+      insights into the geological makeup of the volcano we were scouting. 
+      Speedy, knowledgable, and absolutely worth the billion dollars.
 full_image: /img/products-full-width.jpg
 pricing:
   heading: Monthly subscriptions
