@@ -2,6 +2,13 @@
 templateKey: 'about-page'
 path: /about
 title: About Us
+tiles:
+  image1:
+    image: /img/gear.jpg
+  image2:
+    image: /img/class.jpg
+  image3:
+    image: /img/rig.jpg
 team: 
   Will:
     name: James Bond

@@ -5,9 +5,8 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-export const AboutPageTemplate = ({ title, team, bottomImage, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, tiles, team, bottomImage, content, contentComponent }) => {
   const PageContent = contentComponent || Content
-  console.log(team)
 
   return (
     <section className="section section--gradient"
@@ -22,6 +21,27 @@ export const AboutPageTemplate = ({ title, team, bottomImage, content, contentCo
               </h2>
               <hr style={{margin: "0 0 2rem"}} />
               <PageContent className="content" content={content} />
+              <div className="tile is-ancestor"
+                    style={{margin: "2rem -50vw auto",
+                            width: "100vw",
+                            position: "relative",
+                            left: "50%",
+                            right: "50%"}} >
+                <div className="tile is-parent">
+                  <article className="tile is-child"
+                            style={{padding: "0 0.75rem"}} >
+                    <PreviewCompatibleImage imageInfo={tiles.image1} />
+                  </article>
+                  <article className="tile is-child"
+                            style={{padding: "0 0.75rem"}} >
+                    <PreviewCompatibleImage imageInfo={tiles.image2} />
+                  </article>
+                  <article className="tile is-child"
+                            style={{padding: "0 0.75rem"}} >
+                    <PreviewCompatibleImage imageInfo={tiles.image3} />
+                  </article>
+                </div>
+              </div>
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light has-text-centered"
                   style={{margin: "4rem 0 1rem"}} >
                 Team
@@ -29,9 +49,9 @@ export const AboutPageTemplate = ({ title, team, bottomImage, content, contentCo
               <hr style={{margin: "0 0 4rem"}} />
               <div className="columns">
                 {Object.keys(team).map((key) => (
-                  <div className="column is-5 is-offset-1 has-text-justified">
+                  <div className="column is-5 is-offset-1 has-text-justified" key={key}>
                     <div className="image" style={{width: "200px", margin: "0 auto 2rem"}} >
-                      <PreviewCompatibleImage imageInfo={team[key].image} />
+                      <PreviewCompatibleImage imageInfo={team[key]} />
                     </div>
                     <div className="title is-2 has-text-centered">{team[key].name}</div>
                     <div style={{margin: "0 0 4rem"}} >{team[key].writeup}</div>
@@ -56,6 +76,7 @@ export const AboutPageTemplate = ({ title, team, bottomImage, content, contentCo
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  tiles: PropTypes.object,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
   team: PropTypes.object
@@ -70,6 +91,7 @@ const AboutPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        tiles={post.frontmatter.tiles}
         team={post.frontmatter.team}
         bottomImage={post.frontmatter.bottomImage}
       />
@@ -89,6 +111,35 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        tiles {
+          image1 {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 600) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          image2 {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 600) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          image3 {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 600) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
         bottomImage {
           childImageSharp {
             fluid(maxWidth: 2500) {
